@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "AI Learning",
+    "slug": "ia-learning",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "package": "com.luishenrique.ailearning",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-foreground.png",
+        "backgroundColor": "#000000"
+      },
+      "edgeToEdgeEnabled": true,
+      "runtimeVersion": "1.0.1",
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-localization",
+      "expo-notifications"
+    ],
+    "notification": {
+      "color": "#4FAC45"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5019ac29-3ecc-40a5-a1f6-50eb97014f51"
+      }
+    },
+    "owner": "luish3nrique",
+    "updates": {
+      "url": "https://u.expo.dev/5019ac29-3ecc-40a5-a1f6-50eb97014f51"
+    }
+  }
+}

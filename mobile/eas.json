@@ -1,0 +1,39 @@
+{
+  "cli": {
+    "version": ">= 10.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "channel": "preview",
+      "android": {
+        "buildType": "apk",
+        "image": "sdk-54"
+      },
+      "env": {
+        "EXPO_PUBLIC_URL": "https://ia-learning-api.onrender.com",
+        "EXPO_PUBLIC_PUSH_ENV": "prod",
+        "EXPO_PUBLIC_APIKEY": "AIzaSyDTjBuxfyNof59DgNsot4fAi4Ws2SIigdg",
+        "EXPO_PUBLIC_DB_URL": "https://ialeaning-default-rtdb.firebaseio.com/",
+        "EXPO_PUBLIC_EAS_PROJECT_ID": "AIzaSyBj2wxQR6y2C_Bevt26R6FiCRnkclZY8DU"
+      }
+    },
+    "production": {
+      "channel": "production",
+      "android": {
+        "buildType": "app-bundle",
+        "image": "sdk-54"
+      },
+      "env": {
+        "EXPO_PUBLIC_URL": "https://ia-learning-api.onrender.com",
+        "EXPO_PUBLIC_PUSH_ENV": "prod",
+        "EXPO_PUBLIC_APIKEY": "AIzaSyDTjBuxfyNof59DgNsot4fAi4Ws2SIigdg",
+        "EXPO_PUBLIC_DB_URL": "https://ialeaning-default-rtdb.firebaseio.com/",
+        "EXPO_PUBLIC_EAS_PROJECT_ID": "AIzaSyBj2wxQR6y2C_Bevt26R6FiCRnkclZY8DU"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

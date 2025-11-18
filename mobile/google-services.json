@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044017319147",
+    "project_id": "ialeaning",
+    "storage_bucket": "ialeaning.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044017319147:android:1fd7b9788ad617361e02ae",
+        "android_client_info": {
+          "package_name": "com.luishenrique.ailearning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj2wxQR6y2C_Bevt26R6FiCRnkclZY8DU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

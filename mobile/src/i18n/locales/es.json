@@ -1,0 +1,401 @@
+{
+  "login": {
+    "title": "Iniciar sesión",
+    "subtitle": "Inicie sesión con su correo electrónico y contraseña",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "noAccountPrefix": "¿No tiene una cuenta?",
+    "noAccount": "Regístrese"
+  },
+  "register": {
+    "title": "Crear cuenta",
+    "subtitle": "Crea tu cuenta para empezar a aprender con IA",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "haveAccountPrefix": "¿Ya tienes una cuenta?",
+    "haveAccount": "Inicia sesión"
+  },
+  "actions": {
+    "signIn": "Iniciar sesión",
+    "signUp": "Registrarse"
+  },
+  "auth": {
+    "errors": {
+      "emailExists": "Este email ya está en uso. Por favor, utiliza otro email.",
+      "invalidCredentials": "Credenciales inválidas. Por favor, intenta nuevamente.",
+      "tooManyAttempts": "Demasiados intentos de inicio de sesión. Por favor, intenta nuevamente más tarde.",
+      "generic": "Ocurrió un error. Por favor, intenta nuevamente."
+    },
+    "fields": {
+      "email": {
+        "required": "El campo de correo electrónico es obligatorio",
+        "invalid": "Por favor, ingrese un correo electrónico válido"
+      },
+      "password": {
+        "required": "El campo de contraseña es obligatorio",
+        "min": "La contraseña debe tener al menos 6 caracteres"
+      }
+    }
+  },
+  "tabs": {
+    "home": "Inicio",
+    "explore": "Explorar",
+    "about": "Acerca de",
+    "profile": "Perfil"
+  },
+  "header": {
+    "notifications": {
+      "title": "Mensajes",
+      "subtitle": "Mantente al tanto de las novedades. Toca un mensaje para marcarlo como leído.",
+      "items": {
+        "welcome": {
+          "title": "Bienvenido a IA Learning",
+          "description": "Usa la app para descubrir cómo aprovechar mejor las IAs en tu día a día."
+        },
+        "beta": {
+          "title": "Versión beta en pruebas",
+          "description": "Esta aún es una versión beta. Algunas funcionalidades pueden cambiar pronto."
+        }
+      }
+    },
+    "settings": {
+      "title": "Configuración",
+      "themeTitle": "Tema",
+      "themeLight": "Claro",
+      "themeDark": "Oscuro",
+      "languageTitle": "Idioma",
+      "languagePt": "PT",
+      "languageEs": "ES"
+    },
+    "actions": {
+      "close": "Cerrar"
+    }
+  },
+  "home": {
+    "greeting": "¡Hola, {{name}}!",
+    "greetingSubtitle": "¿Qué vamos a aprender hoy?",
+    "exploreButton": "Explorar",
+    "close": "Cerrar",
+    "cards": {
+      "study": {
+        "title": "Estudios de IA",
+        "description": "Cursos diseñados para enseñarte a usar la IA en diferentes áreas de tu vida."
+      },
+      "study1": {
+        "detailTitle": "Fundamentos de la IA",
+        "detailDescription": "Introducción a los principales conceptos de IA, tipos de modelos y cuándo usar cada uno."
+      },
+      "study2": {
+        "detailTitle": "IA para la productividad",
+        "detailDescription": "Cómo usar la IA para escribir mejor, resumir textos y organizar tu día."
+      },
+      "study3": {
+        "detailTitle": "IA para el aprendizaje",
+        "detailDescription": "Convierte la IA en tu tutora: creación de tarjetas de estudio, simulacros y resúmenes guiados."
+      },
+      "study4": {
+        "detailTitle": "Buenas prácticas y ética",
+        "detailDescription": "Límites, riesgos y cómo usar la IA de forma responsable y segura."
+      },
+      "study5": {
+        "detailTitle": "Rutinas personalizadas",
+        "detailDescription": "Crea rutinas de aprendizaje con listas de verificación y desafíos diarios usando IA."
+      },
+      "study6": {
+        "detailTitle": "Explorando nuevos modelos",
+        "detailDescription": "Conoce diferentes LLMs, compara respuestas y elige el modelo ideal para cada tarea."
+      }
+    }
+  },
+  "profile": {
+    "viewProfile": "Ver Perfil",
+    "help": {
+      "title": "¿Alguna duda o sugerencia?",
+      "link": "Saber más"
+    },
+    "settings": {
+      "title": "Configuración",
+      "personal": "Información personal"
+    },
+    "language": {
+      "title": "Idioma",
+      "subtitle": "Elige en qué idioma quieres usar la aplicación."
+    },
+    "appearance": {
+      "title": "Tema",
+      "subtitle": "Alterna entre modo claro y oscuro."
+    },
+    "session": {
+      "title": "Sesión",
+      "loggedEmail": "Has iniciado sesión como {{email}}",
+      "signOut": "Salir",
+      "signOutQuestion": "¿Seguro que deseas salir?"
+    },
+    "data": {
+      "title": "Información personal",
+      "subtitle": "Actualiza cómo quieres que te llamemos dentro de la app.",
+      "namePlaceholder": "Tu nombre",
+      "nameTooShort": "El nombre debe tener al menos 2 caracteres."
+    },
+    "errors": {
+      "load": "No fue posible cargar tus datos. Inténtalo de nuevo.",
+      "save": "No fue posible guardar los cambios. Inténtalo de nuevo."
+    },
+    "toast": {
+      "updated": "¡Perfil actualizado con éxito!"
+    }
+  },
+  "common": {
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "add": "Agregar",
+    "clear": "Limpiar"
+  },
+  "theme": {
+    "title": "Tema",
+    "current": {
+      "light": "Claro",
+      "dark": "Oscuro"
+    },
+    "action": {
+      "toggle": "alternar"
+    }
+  },
+  "user": {
+    "errors": {
+      "notFound": "Usuario no encontrado.",
+      "load": "No fue posible cargar tus datos.",
+      "update": "No fue posible actualizar tu perfil.",
+      "invalidName": "Nombre inválido.",
+      "nameRequired": "El nombre es obligatorio.",
+      "nameTooShort": "El nombre debe tener al menos 2 caracteres.",
+      "nameTooLong": "El nombre debe tener como máximo 50 caracteres."
+    }
+  },
+  "about": {
+    "title": "Sobre la App",
+    "appName": "Nombre de la aplicación:",
+    "gitSha": "Commit:",
+    "expoVersion": "Versión de Expo:",
+    "nativeVersion": "Versión nativa:",
+    "buildNumber": "Número de compilación:",
+    "runtime": "Entorno:",
+    "close": "Cerrar"
+  },
+  "explore": {
+    "tabs": {
+      "ranking": "Ranking",
+      "manage": "Mi Central"
+    },
+    "filter": {
+      "title": "¿Qué quieres hacer?",
+      "subtitle": "Vamos a elegir el mejor modelo.",
+      "modalTitle": "Filtros del ranking",
+      "modalSubtitle": "Refina el ranking según el tipo de tarea y la puntuación mínima.",
+      "searchLabel": "Buscar por nombre o tarea",
+      "searchPlaceholder": "Ej.: resumen de textos, generación de imágenes...",
+      "categoryLabel": "Categoría",
+      "category": {
+        "all": "Todas",
+        "chat": "Chat/Texto",
+        "code": "Código",
+        "image": "Imágenes",
+        "audio": "Audio",
+        "assistant": "Asistentes"
+      },
+      "scoreLabel": "Ecoscore",
+      "score": {
+        "any": "Cualquiera"
+      },
+      "clear": "Limpiar",
+      "apply": "Aplicar filtros",
+      "empty": "Ningún modelo encontrado para estos filtros."
+    },
+    "manage": {
+      "title": "Central",
+      "tabs": {
+        "prompts": "Prompts",
+        "tasks": "Tareas",
+        "evaluations": "Evaluar IA"
+      }
+    },
+    "details": {
+      "rankLabel": "Posición en el ranking: #{{rank}}",
+      "hint": "Usa este modelo cuando quieras realizar tareas relacionadas con ese tipo de IA. Puedes combinarlo con otros filtros en la pantalla de ranking para llegar a la mejor elección.",
+      "categoryLabel": "Categoría principal",
+      "descriptionLabel": "Descripción"
+    }
+  },
+  "ranking": {
+    "loading": "Cargando modelos...",
+    "errors": {
+      "load": "No fue posible cargar el ranking de modelos. Inténtalo de nuevo."
+    }
+  },
+  "prompts": {
+    "listTitle": "Prompts registrados",
+    "newTitle": "Nuevo prompt",
+    "editTitle": "Editar prompt",
+    "empty": "Ningún prompt registrado todavía.",
+    "searchPlaceholder": "Buscar por nombre o contenido del prompt",
+    "fields": {
+      "name": "Nombre del prompt",
+      "description": "Prompt"
+    },
+    "placeholders": {
+      "name": "Ej.: Estudio guiado para examen",
+      "description": "Pega aquí el prompt completo que quieres reutilizar."
+    },
+    "actions": {
+      "new": "Nuevo prompt",
+      "backToList": "Ver lista",
+      "copy": "Copiar prompt",
+      "delete": "Eliminar",
+      "edit": "Editar"
+    },
+    "loading": "Cargando prompts...",
+    "errors": {
+      "load": "No fue posible cargar los prompts. Inténtalo de nuevo.",
+      "validation": "Completa el nombre y el prompt antes de guardar.",
+      "delete": "No fue posible eliminar el prompt. Inténtalo de nuevo.",
+      "update": "No fue posible actualizar el prompt. Inténtalo de nuevo."
+    },
+    "toasts": {
+      "copied": "¡Prompt copiado!",
+      "deleted": "¡Prompt eliminado con éxito!",
+      "updated": "¡Prompt actualizado con éxito!",
+      "created": "¡Prompt creado con éxito!"
+    },
+    "confirmDelete": {
+      "title": "Eliminar prompt",
+      "message": "¿Seguro que deseas eliminar este prompt?",
+      "cancel": "Cancelar",
+      "confirm": "Eliminar"
+    }
+  },
+  "tarefas": {
+    "listTitle": "Tareas",
+    "newTitle": "Nueva tarea",
+    "empty": "Ninguna tarea registrada todavía. Crea la primera en la pestaña de registro.",
+    "searchPlaceholder": "Buscar por título o descripción",
+    "fields": {
+      "titulo": "Título de la tarea",
+      "descricao": "Descripción",
+      "dificuldade": "Dificultad",
+      "tempoDisponivel": "Tiempo disponible (minutos)"
+    },
+    "placeholders": {
+      "titulo": "Ej.: Revisar contenido de IA para el examen",
+      "descricao": "Describe lo que necesitas estudiar o producir.",
+      "dificuldade": "Ej.: fácil, medio, difícil",
+      "tempoDisponivel": "Ej.: 30"
+    },
+    "actions": {
+      "goToForm": "Nueva tarea",
+      "goToList": "Ver lista",
+      "save": "Guardar tarea",
+      "recommend": "Generar recomendación"
+    },
+    "loading": "Cargando tareas...",
+    "toasts": {
+      "created": "¡Tarea creada con éxito!",
+      "generated": "¡Recomendación generada con éxito para esta tarea!",
+      "deleted": "Tarea eliminada (solo en la visualización).",
+      "recommendationLoaded": "Recomendación generada para esta tarea."
+    },
+    "confirmDelete": {
+      "title": "Eliminar tarea",
+      "message": "¿Seguro que deseas eliminar esta tarea?",
+      "cancel": "Cancelar",
+      "confirm": "Eliminar"
+    },
+    "errors": {
+      "load": "No fue posible cargar las tareas. Inténtalo de nuevo.",
+      "fieldsRequired": "Completa al menos el título y la descripción de la tarea.",
+      "create": "No fue posible crear la tarea. Inténtalo de nuevo.",
+      "recommendation": "No fue posible generar la recomendación. Inténtalo de nuevo."
+    },
+    "recommendation": {
+      "title": "Recomendación de estudio",
+      "subtitle": "Usa este plan como punto de partida para organizar tus estudios.",
+      "empty": "No se devolvió ninguna recomendación para esta tarea.",
+      "copy": "Copiar recomendación",
+      "copied": "Recomendación copiada al portapapeles."
+    }
+  },
+  "avaliacoes": {
+    "sectionTitle": "Evaluar IA",
+    "loading": "Cargando IAs...",
+    "empty": "Ninguna IA registrada todavía. Usa el backend para crear algunas entradas primero.",
+    "averageLabel": "Media: {{value}}",
+    "modalSubtitle": "Evalúa esta IA de 0 a 5 y comparte un comentario.",
+    "fields": {
+      "iaId": "ID de la IA",
+      "nota": "Nota (0 a 5)",
+      "comentario": "Comentario (opcional)"
+    },
+    "placeholders": {
+      "iaId": "Ej.: 1",
+      "nota": "Ej.: 4",
+      "comentario": "Comparte cómo esta IA te ayudó en tus estudios."
+    },
+    "actions": {
+      "save": "Guardar evaluación"
+    },
+    "toasts": {
+      "saved": "¡Evaluación registrada con éxito!"
+    },
+    "errors": {
+      "load": "No fue posible cargar las IAs. Inténtalo de nuevo.",
+      "notaRequired": "Ingresa una nota entre 0 y 5.",
+      "notaRange": "La nota debe estar entre 0 y 5.",
+      "iaRequired": "Selecciona una IA para evaluar.",
+      "create": "No fue posible guardar tu evaluación. Inténtalo de nuevo."
+    }
+  },
+  "alertas": {
+    "fields": {
+      "mensagem": "Mensaje del alerta",
+      "prioridade": "Prioridad"
+    },
+    "placeholders": {
+      "mensagem": "Ej.: Recordatorio de repaso antes del examen de IA."
+    },
+    "prioridade": {
+      "baixa": "Baja",
+      "media": "Media",
+      "alta": "Alta"
+    },
+    "actions": {
+      "save": "Crear alerta"
+    },
+    "labels": {
+      "prioridade": "Prioridad"
+    },
+    "errors": {
+      "load": "No fue posible cargar los alertas. Inténtalo de nuevo.",
+      "mensagemRequired": "El mensaje del alerta es obligatorio.",
+      "prioridadeRequired": "Selecciona una prioridad.",
+      "create": "No fue posible crear el alerta. Inténtalo de nuevo."
+    },
+    "loading": "Cargando alertas..."
+  },
+  "push": {
+    "promptCreated": {
+      "title": "Nuevo prompt guardado",
+      "body": "El prompt \"{{title}}\" se ha guardado en tu centro de registros."
+    },
+    "tarefaCreated": {
+      "title": "Nueva tarea creada",
+      "body": "La tarea \"{{title}}\" se ha añadido a tu lista."
+    },
+    "avaliacaoCreated": {
+      "title": "Evaluación registrada",
+      "body": "Tu evaluación para \"{{iaName}}\" se ha registrado correctamente."
+    }
+  }
+}

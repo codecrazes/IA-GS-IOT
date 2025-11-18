@@ -1,0 +1,66 @@
+export const light = {
+  colors: {
+    bg: '#F2F4F5',
+    card: '#FFFFFF',
+    border: '#E0E3E7',
+    text: '#0A0A0A',
+    text_alt: '#0A0A0A',
+    textSecondary: '#00719C',
+    subtext_alt: '#0A0A0A',
+    subtext: '#6F7274',
+    mutedText: '#9A9DA0',
+    primary: '#001F2B',
+    primaryText: '#FFFFFF',
+    error: '#D32F2F',
+    success: '#2E7D32',
+    overlay: 'rgba(0,0,0,0.5)',
+    black: '#000000',
+    white: '#FFFFFF',
+    dot: '#CCCCCC',
+  },
+  radius: {
+    sm: 8,
+    md: 12,
+    lg: 24,
+    xl: 32,
+  },
+  spacing: (n: number) => 4 * n,
+  font: {
+    xs: 12,
+    sm: 14,
+    body: 16,
+    base: 16,
+    lg: 18,
+    xl: 22,
+    h1: 24,
+    h2: 20,
+    h3: 34,
+  },
+  fontFamily: {
+    regular: 'Poppins_400Regular',
+    medium: 'Poppins_500Medium',
+    semiBold: 'Poppins_600SemiBold',
+    bold: 'Poppins_700Bold',
+  },
+};
+
+export const dark: typeof light = {
+  ...light,
+  colors: {
+    ...light.colors,
+    bg: '#0A0A0A',
+    card: '#202020ff',
+    border: '#20252B',
+    text: '#F5F7F8',
+    text_alt: '#0A0A0A',
+    textSecondary: '#00719C',
+    subtext: '#C0C3C7',
+    subtext_alt: '#0A0A0A',
+    mutedText: '#8A8E92',
+    primary: '#4EC8FF',
+    primaryText: '#001018',
+    dot: '#3A3E42',
+  },
+};
+
+export type Theme = typeof light;

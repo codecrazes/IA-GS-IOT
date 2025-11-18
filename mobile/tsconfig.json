@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@i18n/*": [
+        "src/i18n/*"
+      ],
+      "@i18n": [
+        "src/i18n/index.ts"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@view/*": [
+        "src/view/*"
+      ],
+      "@control/*": [
+        "src/control/*"
+      ],
+      "@model/*": [
+        "src/model/*"
+      ],
+      "@service/*": [
+        "src/service/*"
+      ],
+      "@fetcher/*": [
+        "src/fetcher/*"
+      ],
+      "@context/*": [
+        "src/context/*"
+      ],
+      "@navigation/*": [
+        "src/navigation/*"
+      ],
+      "@theme/*": [
+        "src/theme/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@notifications/*": [
+        "src/notifications/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ]
+    },
+    "strict": true,
+    "noImplicitAny": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
+}
