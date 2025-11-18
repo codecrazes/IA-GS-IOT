@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import MentorScreen from '@view/Mentor';
 import VisionScreen from '@view/Vision';
+import InsightsScreen from '@view/Insights';
+
 
 import { useTheme } from '@theme/useTheme';
 
@@ -43,6 +45,7 @@ export type TabParamList = {
   About: undefined;
   Mentor: undefined;
   Vision: undefined;
+  Insights: undefined;
   Profile: undefined;
 };
 
@@ -177,6 +180,15 @@ export default function BottomTabs() {
         name="Vision"
         component={VisionScreen}
         options={{ tabBarLabel: 'Ambiente Visual', title: 'Ambiente Visual' }}
+      />
+      
+      <Tab.Screen
+        name="Insights"
+        component={InsightsScreen}
+        options={{
+          tabBarLabel: 'Insights',
+          title: 'Insights',
+        }}
       />
 
       <Tab.Screen
