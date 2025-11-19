@@ -1,10 +1,17 @@
-import React, { useContext, useEffect, useMemo, useState } from 'react';
+import React, {
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  useCallback,
+} from 'react';
 import {
   ScrollView,
   View,
   Text,
   StyleSheet,
   ActivityIndicator,
+  Pressable,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme } from '@theme/useTheme';
@@ -26,9 +33,36 @@ const createStyles = (theme: any) =>
       flex: 1,
       backgroundColor: theme.colors.bg,
     },
-    scrollContent: {
+    headerRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
       paddingHorizontal: theme.spacing(4),
       paddingTop: theme.spacing(4),
+    },
+    headerTitle: {
+      fontSize: theme.font.h1,
+      fontFamily: theme.fontFamily.semiBold,
+      color: theme.colors.text,
+    },
+    refreshButton: {
+      paddingHorizontal: theme.spacing(2),
+      paddingVertical: theme.spacing(1),
+      borderRadius: 999,
+      borderWidth: 1,
+      borderColor: theme.colors.border,
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: theme.spacing(1),
+    },
+    refreshText: {
+      fontSize: theme.font.xs,
+      fontFamily: theme.fontFamily.medium,
+      color: theme.colors.text,
+    },
+    scrollContent: {
+      paddingHorizontal: theme.spacing(4),
+      paddingTop: theme.spacing(2),
       paddingBottom: theme.spacing(6),
       gap: theme.spacing(4),
     },
@@ -116,44 +150,36 @@ const InsightsScreen: React.FC = () => {
   const [resumo, setResumo] = useState<ResumoUsoIaResponse | null>(null);
   const [erro, setErro] = useState<string | null>(null);
 
+  const carregarTudo = useCallback(async () => {
+    setLoading(true);
+    setErro(null);
+
+    const [ecoRes, iasRes, resumoRes] = await Promise.all([
+      carregarEcoConsumoUsuario(usuarioId, token || undefined),
+      carregarIasMaisUsadas(token || undefined),
+      carregarResumoUsoIa(usuarioId, token || undefined),
+    ]);
+
+    console.log('INSIGHTS DEBUG ecoRes =>', ecoRes);
+    console.log('INSIGHTS DEBUG iasRes =>', iasRes);
+    console.log('INSIGHTS DEBUG resumoRes =>', resumoRes);
+
+    if (!ecoRes.ok) setErro((prev) => prev || ecoRes.erroGeral || null);
+    else setEco(ecoRes.data);
+
+    if (!iasRes.ok) setErro((prev) => prev || iasRes.erroGeral || null);
+    else setIas(iasRes.data);
+
+    if (!resumoRes.ok)
+      setErro((prev) => prev || resumoRes.erroGeral || null);
+    else setResumo(resumoRes.data);
+
+    setLoading(false);
+  }, [usuarioId, token]);
+
   useEffect(() => {
-    let isMounted = true;
-
-    async function carregarTudo() {
-      setLoading(true);
-      setErro(null);
-
-      const [ecoRes, iasRes, resumoRes] = await Promise.all([
-        carregarEcoConsumoUsuario(usuarioId, token || undefined),
-        carregarIasMaisUsadas(token || undefined),
-        carregarResumoUsoIa(usuarioId, token || undefined),
-      ]);
-
-      if (!isMounted) return;
-
-      console.log('INSIGHTS DEBUG ecoRes =>', ecoRes);
-      console.log('INSIGHTS DEBUG iasRes =>', iasRes);
-      console.log('INSIGHTS DEBUG resumoRes =>', resumoRes);
-
-      if (!ecoRes.ok) setErro((prev) => prev || ecoRes.erroGeral || null);
-      else setEco(ecoRes.data);
-
-      if (!iasRes.ok) setErro((prev) => prev || iasRes.erroGeral || null);
-      else setIas(iasRes.data);
-
-      if (!resumoRes.ok)
-        setErro((prev) => prev || resumoRes.erroGeral || null);
-      else setResumo(resumoRes.data);
-
-      setLoading(false);
-    }
-
     carregarTudo();
-
-    return () => {
-      isMounted = false;
-    };
-  }, [token, usuarioId]);
+  }, [carregarTudo]);
 
   function getNivelDescricao(nivel?: string | null) {
     switch (nivel) {
@@ -177,6 +203,19 @@ const InsightsScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.root}>
+      {/* Header com botão de atualizar */}
+      <View style={styles.headerRow}>
+        <Text style={styles.headerTitle}>Insights</Text>
+
+        <Pressable
+          onPress={carregarTudo}
+          style={styles.refreshButton}
+          disabled={loading}
+        >
+          <Text style={styles.refreshText}>⟳ Atualizar</Text>
+        </Pressable>
+      </View>
+
       <ScrollView contentContainerStyle={styles.scrollContent}>
         {/* 1. Resumo do uso da IA (texto do mentor) */}
         <View style={styles.sectionCard}>

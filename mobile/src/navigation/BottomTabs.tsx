@@ -39,6 +39,10 @@ import vision from '@assets/icons/vision.svg';
 import visionDark from '@assets/icons/vision-dark.svg';
 import visionSelected from '@assets/icons/vision-selected.svg';
 
+import insights from '@assets/icons/insights.svg';
+import insightsDark from '@assets/icons/insights-dark.svg';
+import insightsSelected from '@assets/icons/insights-selected.svg';
+
 export type TabParamList = {
   Home: undefined;
   Explore: undefined;
@@ -80,7 +84,12 @@ const iconMap: Partial<Record<keyof TabParamList, IconConfig>> = {
     unfocusedDark: profileDark,
   },
 
-  // NOVOS:
+  Insights: {
+    focused: insightsSelected,
+    unfocusedLight: insights,
+    unfocusedDark: insightsDark,
+  },
+
   Mentor: {
     focused: mentorSelected,
     unfocusedLight: mentor,
