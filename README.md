@@ -356,7 +356,7 @@ Endpoint usado:
 
 ## 🎥 Vídeo da Apresentação
 
-- **YouTube**: [Link da apresentação](https://youtu.be/SEU_VIDEO_AQUI)
+- **YouTube**: [Link da apresentação](https://youtu.be/U2O34N6PSeQ)
 
 > Substituir pelo link real do vídeo da GS.
 

@@ -195,8 +195,8 @@ export default function BottomTabs() {
         name="Insights"
         component={InsightsScreen}
         options={{
-          tabBarLabel: 'Insights',
-          title: 'Insights',
+          tabBarLabel: 'Analises',
+          title: 'Analises',
         }}
       />
 

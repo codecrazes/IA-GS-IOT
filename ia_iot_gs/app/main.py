@@ -33,10 +33,6 @@ app.add_middleware(
 )
 
 
-# Se você tiver um router em analytics.py, pode habilitar também:
-# app.include_router(analytics.router)
-
-
 @app.get("/health")
 def health():
     return {"status": "ok"}
