@@ -231,7 +231,7 @@ EXPO_PUBLIC_API_URL=http://127.0.0.1:8000
 npx expo start --web
 ```
 
-- Abra o link que o Expo mostrar no terminal (geralmente `http://localhost:19006`).
+- Abra o link que o Expo mostrar no terminal (geralmente `http://localhost:8081/`).
 - Faça login/cadastro.
 - Navegue pelas abas:
   - **Mentor IA**
