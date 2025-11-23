@@ -174,14 +174,14 @@ pip install fastapi "uvicorn[standard]" python-multipart pymongo python-dotenv g
 > Se você também quiser suporte a OpenAI, instale:  
 > `pip install openai`
 
-### 3️⃣ Arquivo `.env` do backend
+### 3️⃣ Arquivo `.env` do backend ia_iot_gs
 
 O repositório já inclui um arquivo `.env` **pré-configurado** para uso local.  
 Verifique o conteúdo (exemplo):
 
 ```env
 LLM_PROVIDER=gemini
-GEMINI_API_KEY=SUA_CHAVE_AQUI
+GEMINI_API_KEY=SUA_CHAVE_AQUI (A chave da API vai estar no documento enviado)
 
 MONGO_URL=mongodb://localhost:27017
 MONGO_DB=gs_disruptive
@@ -197,14 +197,6 @@ Com o ambiente virtual ativado e o `.env` configurado:
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
-
-Testes rápidos:
-
-- Documentação Swagger:  
-  👉 `http://127.0.0.1:8000/docs`
-- Health check:  
-  👉 `http://127.0.0.1:8000/health`
-
 Se tudo estiver ok, o mobile já consegue consumir a API.
 
 ---
